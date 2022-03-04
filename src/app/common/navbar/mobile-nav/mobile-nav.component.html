@@ -1,0 +1,30 @@
+<div class="mobile-nav" [ngClass]="{'active': active === true, 'deactive': active === false}">
+  <div class="mobile-nav__backdrop" (click)="closeMobileNav()"></div>
+  <div class="mobile-nav__body">
+    <button class="navbar-toggler text-end" type="button" (click)="closeMobileNav()">
+      <span class="close-icon me-4"></span>
+    </button>
+    <ul class="nav flex-column my-auto">
+      <li class="nav-item">
+        <a class="nav-link text-uppercase text-end font-weight-normal mb-2" routerLink="/home"
+          routerLinkActive="active"><span>Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase text-end font-weight-normal mb-2" routerLink="/projects"
+          routerLinkActive="active"><span>Projects</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase text-end font-weight-normal mb-2" routerLink="/team"
+          routerLinkActive="active"><span>Team</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase text-end font-weight-normal mb-2" routerLink="/blog"
+          routerLinkActive="active"><span>Blog</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase text-end font-weight-normal mb-2" routerLink="/contact"
+          routerLinkActive="active"><span>Contact</span></a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,247 @@
+@import "~bootstrap/scss/functions";
+@import "../../../assets/styles/vars";
+@import "~bootstrap/scss/mixins";
+
+.navbar {
+  transition: padding .3s;
+  /*, background-color .3s*/
+
+  &.short {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &-brand {
+    text-transform: uppercase;
+    font-weight: 600;
+
+    @include transition($transition-fade);
+  }
+
+  &-light {
+    .navbar-nav {
+      .nav-link {
+        &:after {
+          background: $navbar-light-color;
+        }
+      }
+    }
+
+    .navbar-toggler-icon {
+      background: $dark;
+
+      &:before,
+      &:after {
+        background: $dark;
+      }
+    }
+  }
+
+  &-dark {
+    .navbar-nav {
+      .nav-link {
+        &:after {
+          background: $navbar-dark-color;
+        }
+      }
+    }
+
+    .navbar-toggler-icon {
+      background: $white;
+
+      &:before,
+      &:after {
+        background: $white;
+      }
+    }
+  }
+
+  &.bg-primary {
+    .navbar-brand {
+      color: $navbar-dark-brand-color;
+
+      // @include hover-focus {
+      //   color: $navbar-dark-brand-hover-color;
+      // }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-dark-color;
+
+        // @include hover-focus {
+        //   color: $navbar-dark-hover-color;
+        // }
+
+        &.disabled {
+          color: $navbar-dark-disabled-color;
+        }
+      }
+
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-dark-active-color;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background: $white;
+
+      &:before,
+      &:after {
+        background: $white;
+      }
+    }
+  }
+
+  &.bg-white {
+    .navbar-brand {
+      color: $navbar-light-brand-color;
+
+      // @include hover-focus {
+      //   color: $navbar-light-brand-hover-color;
+      // }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-light-color;
+
+        // @include hover-focus {
+        //   color: $navbar-light-hover-color;
+        // }
+
+        &.disabled {
+          color: $navbar-light-disabled-color;
+        }
+      }
+
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-light-active-color;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background: $dark;
+
+      &:before,
+      &:after {
+        background: $dark;
+      }
+    }
+  }
+
+  &.bg-transparent {
+    .navbar-brand {
+      color: $navbar-dark-brand-color;
+
+      // @include hover-focus {
+      //   color: $navbar-dark-brand-hover-color;
+      // }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-dark-color;
+
+        // @include hover-focus {
+        //   color: $navbar-dark-hover-color;
+        // }
+
+        &.disabled {
+          color: $navbar-dark-disabled-color;
+        }
+      }
+
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-dark-active-color;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background: $white;
+
+      &:before,
+      &:after {
+        background: $white;
+      }
+    }
+  }
+
+  &-nav {
+    > .nav-item {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      
+      > .nav-link {
+      position: relative;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 $navbar-padding-x;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 3px;
+        transition: width .3s;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+
+      &.active {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+    }
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  &:hover {
+    .navbar-toggler-icon {
+      &:before,
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  height: 2px;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 2px;
+    transition: width .3s;
+  }
+  &:before {
+    top: -10px;
+    width: 60%;
+  }
+  &:after {
+    bottom: -10px;
+    width: 80%;
+  }
+}

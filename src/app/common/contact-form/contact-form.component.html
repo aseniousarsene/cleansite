@@ -1,0 +1,48 @@
+<div class="alert alert-success alert-dismissible fade show" *ngIf="submitTrigger">
+  <strong>Well done!</strong> We will contact you soon.
+  <button type="button" class="btn-close" (click)="submitTrigger = false"></button>
+</div>
+
+<form class="form" [ngClass]="{'form-dark': formDark}" #contactForm="ngForm"
+  (ngSubmit)="submit(contactForm.value); contactForm.reset()" autocomplete="off">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="name" class="form-label d-flex justify-content-between">
+        Name <span class="text-danger small"
+          *ngIf="(contactForm.controls['name']?.invalid && contactForm.controls['name']?.touched) || (mouseOverSubmit && contactForm.controls['name']?.invalid)">Please
+          provide a Name.</span>
+      </label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="e.g. John Doe" (ngModel)="name"
+        required>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="Email" class="form-label d-flex justify-content-between">
+        Email <span class="text-danger small"
+          *ngIf="(contactForm.controls['email']?.invalid && contactForm.controls['email']?.touched) || (mouseOverSubmit && contactForm.controls['email']?.invalid)">Please
+          provide a valid email.</span>
+      </label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="e.g. example@example.com"
+        (ngModel)="email" required email>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label d-flex justify-content-between">
+      Message <span class="text-danger small"
+        *ngIf="(contactForm.controls['message']?.invalid && contactForm.controls['message']?.touched) || (mouseOverSubmit && contactForm.controls['message']?.invalid)">Please
+        provide a message.</span>
+    </label>
+    <textarea class="form-control" name="message" id="message" rows="4" placeholder="How are you?" (ngModel)="message"
+      required></textarea>
+    <div class="invalid-feedback">
+
+    </div>
+  </div>
+  <div class="d-inline-block position-relative">
+    <div class="position-absolute w-100 h-100" style="z-index: 100" (mouseover)="mouseOverSubmit = true"
+      (mouseleave)="mouseOverSubmit = false" *ngIf="contactForm.invalid"></div>
+    <button class="btn btn-primary" [disabled]="contactForm.invalid || submitTrigger"
+      [ngClass]="{'disabled': contactForm.invalid}" type="submit">Send message
+    </button>
+  </div>
+</form>

@@ -1,0 +1,144 @@
+@import "~bootstrap/scss/functions";
+@import "../../../../assets/styles/vars";
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: $zindex-modal;
+  background-color: rgba($modal-backdrop-bg, $modal-backdrop-opacity);
+
+  &.active {
+    animation: backdrop-in .3s forwards;
+    .mobile-nav__body {
+      animation: mobile-nav-body-in .4s ease-in-out .3s forwards;
+    }
+  }
+
+  &.deactive {
+    animation: backdrop-out .3s forwards;
+    .mobile-nav__body {
+      animation: mobile-nav-body-out .4s ease-in-out forwards;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background: $white;
+    padding-top: $grid-gutter-width;
+    z-index: $zindex-modal;
+  }
+
+  &__backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-link {
+    color: $navbar-light-brand-color;
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+
+    > span {
+      position: relative;
+    }
+
+    &.active {
+      > span {
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -$nav-link-padding-y;
+          right: 0;
+          width: 100%;
+          height: 3px;
+          background: $navbar-light-brand-color;
+        }
+      }
+
+    }
+  }
+}
+
+.close-icon {
+  width: $font-size-base;
+  height: $font-size-base;
+  display: inline-block;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $black;
+    border-left: none;
+    border-bottom: none;
+  }
+  &:before {
+    transform: rotate(45deg);
+    left: calc(-50% - 2px);
+  }
+  &:after {
+    transform: rotate(-135deg);
+    right: calc(-50% - 2px);
+  }
+}
+
+@keyframes backdrop-in {
+  0% {
+    left: 100vh;
+    opacity: 0;
+  }
+  1% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes backdrop-out {
+  0% {
+    left: 0;
+    opacity: 1;
+
+  }
+  99% {
+    left: 0;
+    opacity: 0;
+  }
+  100% {
+    left: 100vh;
+    opacity: 0;
+  }
+}
+@keyframes mobile-nav-body-in {
+  from {
+    right: -250px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes mobile-nav-body-out {
+  from {
+    right: 0;
+  }
+  to {
+    right: -250px;
+  }
+}

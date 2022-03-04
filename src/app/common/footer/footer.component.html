@@ -1,0 +1,36 @@
+<footer class="footer pb-6 pt-6 pt-md-8" [ngClass]="{'bg-primary text-white': isHome, 'footer_light': light}">
+  <div class="container">
+    <div *ngIf="!light" class="row">
+      <div class="col-sm-7">
+        <h2>Have a questions, talk to us.</h2>
+        <h5 class="mb-5 mb-md-7">We reply to everyone.</h5>
+      </div>
+      <div class="col-sm-5 pt-3 mb-5 mb-md-0">
+        <p class="small mb-1" [ngClass]="{'text-muted': !isHome, 'text-light': isHome}">FOR BUSINESS</p>
+        <p class="mb-4 pb-2 h5"><a [ngClass]="{'text-white': isHome, 'text-black': !isHome}"
+            href="">info@example.com</a></p>
+
+        <p class="small mb-1" [ngClass]="{'text-muted': !isHome, 'text-light': isHome}">SAY HI</p>
+        <p class="mb-4 h5"><a [ngClass]="{'text-white': isHome, 'text-black': !isHome}"
+            href="">support.info@example.com</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7 mb-3">© pcs-web. 2019 | Privacy Policy</div>
+      <div class="col-md-5 mb-3 text-white">
+        <a class="me-4" href="#" [ngClass]="{'text-white': isHome}">
+          <!-- <fa-icon [icon]="faInstagram" [size]="'lg'"></fa-icon> -->
+        </a>
+        <a class="me-4" href="#" [ngClass]="{'text-white': isHome}">
+          <!-- <fa-icon [icon]="faBehance" [size]="'lg'"></fa-icon> -->
+        </a>
+        <a class="me-4" href="#" [ngClass]="{'text-white': isHome}">
+          <!-- <fa-icon [icon]="faDribbble" [size]="'lg'"></fa-icon> -->
+        </a>
+        <a class="me-4" href="#" [ngClass]="{'text-white': isHome}">
+          <!-- <fa-icon [icon]="faLinkedinIn" [size]="'lg'"></fa-icon> -->
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

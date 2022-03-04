@@ -1,0 +1,67 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <h1 class="mt-8 mb-7 text-center">We make the world better</h1>
+
+  <img src="/assets/img/team/tim-van-der-kuip-1403210-unsplash.jpg" alt="" class="img-fluid mb-5 mb-md-7">
+
+  <section class="motivation text-center mb-5 mb-lg-7">
+
+    <div class="container">
+      <div class="row justify-content-between text-white">
+        <div class="col-md-4 pt-md-6">
+          <app-team-member [id]="1"></app-team-member>
+          <app-team-member [id]="5"></app-team-member>
+        </div>
+        <div class="col-md-4">
+          <app-team-member [id]="3"></app-team-member>
+          <app-team-member [id]="2"></app-team-member>
+        </div>
+        <div class="col-md-4 pt-md-7">
+          <app-team-member [id]="4"></app-team-member>
+          <app-team-member [id]="6"></app-team-member>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="mb-5 mb-lg-7">
+    <h2 class="h1 mb-5">We on DevConf</h2>
+
+    <div class="row mb-5">
+      <div class="col-sm-4 col-lg-3 col-xl-2">
+        <img src="/assets/img/team/alex-kotliarskyi-361099-unsplash.jpg" alt="" class="img-fluid mb-4">
+      </div>
+      <div class="col-sm-8 col-xl-7 d-flex flex-column justify-content-center">
+        <h4><b>The development process in a small company</b></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet, facilis id mollitia non
+          numquam praesentium repudiandae sed temporibus vero? Deleniti dicta dolorum eaque, eius est excepturi
+          nobis quidem unde?</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 col-lg-3 col-xl-2">
+        <img src="/assets/img/team/ali-yahya-1103196-unsplash.jpg" alt="" class="img-fluid mb-4">
+      </div>
+      <div class="col-sm-8 col-xl-7 d-flex flex-column justify-content-center">
+        <h4><b>My team is my strength</b></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet, facilis id mollitia non
+          numquam praesentium repudiandae sed temporibus vero? Deleniti dicta dolorum eaque, eius est excepturi
+          nobis quidem unde?</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="h1">We write</h2>
+  <div class="mb-5 mb-lg-7 p-0 col-lg-8">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi esse laudantium, magnam maxime
+      necessitatibus odio sequi vel! Corporis doloribus fugit laborum perspiciatis quis reiciendis saepe sit sunt unde
+      voluptates.</p>
+  </div>
+
+  <app-blog-list [postNum]="2"></app-blog-list>
+</div>
+
+<app-footer></app-footer>

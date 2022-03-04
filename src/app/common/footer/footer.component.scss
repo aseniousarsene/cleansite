@@ -1,0 +1,13 @@
+.footer {
+  h2 {
+    font-size: 4.5rem;
+    max-width: 9em;
+    @media screen and (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+
+  &_light {
+    padding-top: 4rem !important;
+  }
+}

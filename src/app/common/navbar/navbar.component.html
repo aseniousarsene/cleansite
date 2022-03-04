@@ -1,0 +1,28 @@
+<nav #nav class="navbar navbar-expand-lg fixed-top" [ngClass]="navbarClasses">
+  <div class="container">
+
+    <a class="navbar-brand" routerLink="/">pcs-web</a>
+    <button class="navbar-toggler" type="button" (click)="navbarToggle()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/team" routerLinkActive="active">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+        </li>
+      </ul>
+
+      <a class="btn btn-primary py-2 ml-5" [ngClass]="{'btn-warning': navbarDark, 'btn-primary': !navbarDark}"
+        routerLink="/contact" routerLinkActive="active">Contact</a>
+    </div>
+
+  </div>
+</nav>
+<app-mobile-nav [active]="mobileNavActive" (mobileNavToggle)="navbarToggle()"></app-mobile-nav>

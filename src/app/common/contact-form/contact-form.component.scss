@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/functions";
+@import "../../../assets/styles/vars";
+
+.form-dark {
+  label {
+    color: rgba($white, .5);
+  }
+  .form-control {
+    background: rgba($dark, .2);
+    color: $white;
+    border: none;
+
+    &:focus {
+      box-shadow: 0 0 0 .2rem rgba($white, .2);
+    }
+
+    &::placeholder {
+      color: rgba($white, .3);
+    }
+  }
+
+  .btn-primary {
+    background: $warning;
+    color: $dark;
+  }
+}

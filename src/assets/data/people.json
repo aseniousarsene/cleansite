@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Byron Cole",
+    "position": "Designer",
+    "imgUrl": "/assets/img/team/team-2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lily Simmmons",
+    "position": "Developer",
+    "imgUrl": "/assets/img/team/team-3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Robert Harris",
+    "position": "Founder and CEO",
+    "imgUrl": "/assets/img/team/team-4.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Carmen Hoffman",
+    "position": "Account Director",
+    "imgUrl": "/assets/img/team/team-5.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tom Ruiz",
+    "position": "Developer",
+    "imgUrl": "/assets/img/team/team-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Jack Herrera",
+    "position": "Developer",
+    "imgUrl": "/assets/img/team/team-6.jpg"
+  }
+]

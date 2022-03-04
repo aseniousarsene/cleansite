@@ -1,0 +1,93 @@
+@import "~bootstrap/scss/variables";
+
+$default-font: "roboto-example", sans-serif;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 1023px, xl: 1366px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 980px, xl: 1300px);
+
+$gutter: $grid-gutter-width;
+
+$home-bg: #790bb5; //#5f088e
+$body-padding-top: 4rem;
+
+$primary: $home-bg;
+$warning: #fbd102;
+$danger: #f75363;
+$black: $gray-900;
+$text-muted: rgba($body-color, .4);
+//$headings-color: darken($primary, 20%);
+
+$link-color: $home-bg;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+$font-size-base: 1rem;
+$h1-font-size: 4rem;
+$h2-font-size: 2.5rem;
+$headings-margin-bottom: 2rem;
+$headings-line-height: 1.12;
+$headings-font-weight: 700;
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4),
+    7: ($spacer * 8),
+    8: ($spacer * 12)
+  ),
+  $spacers
+);
+
+$border-radius: 0;
+
+//navbar
+$navbar-padding-y: 2rem;
+$navbar-brand-font-size: 1.75rem;
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $navbar-dark-color;
+$navbar-dark-active-color: $navbar-dark-color;
+$navbar-light-color: $black;
+$navbar-light-hover-color: $navbar-light-color;
+$navbar-light-active-color: $navbar-light-color;
+$navbar-toggler-focus-width: 0;
+
+//buttons
+$btn-border-radius: 2px;
+$btn-padding-x: 2rem;
+$btn-padding-y: 1rem;
+$btn-font-weight: 700;
+
+//jumbotron
+$jumbotron-bg: transparent;
+$jumbotron-padding: 4rem;
+
+//form
+$custom-control-indicator-size: $font-size-base;
+$input-height: 4rem;
+$input-padding-y: 1rem;
+$input-padding-x: 1.3rem;
+$input-border-radius: $border-radius;
+$input-placeholder-color: rgba(0,0,0,.3);
+
+
+//options
+$enable-responsive-font-sizes: true;

@@ -1,0 +1,9 @@
+@import "~bootstrap/scss/functions";
+@import "../../assets/styles/vars";
+
+.contact {
+  background: $primary;
+  color: $white;
+  flex-grow: 2;
+}
+

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Better Research, Better Design, Better Results",
+    "date": "2019/03/12",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores commodi delectus, dolores ex excepturi molestias nemo neque nihil officiis perferendis temporibus voluptatem? Cumque doloribus eveniet itaque, modi similique vitae!",
+    "imgUrl": "/assets/img/blog/blogpost.jpg"
+  },
+  {
+    "id": 2,
+    "title": "How To Build And Develop Websites With Gulp",
+    "date": "2019/03/12",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores commodi delectus, dolores ex excepturi molestias nemo neque nihil officiis perferendis temporibus voluptatem? Cumque doloribus eveniet itaque, modi similique vitae!",
+    "imgUrl": "/assets/img/blog/daniel-chen-546446-unsplash.jpg"
+  },
+  {
+    "id": 3,
+    "title": "A Reference Guide For Typography In Mobile Web Design",
+    "date": "2019/03/12",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores commodi delectus, dolores ex excepturi molestias nemo neque nihil officiis perferendis temporibus voluptatem? Cumque doloribus eveniet itaque, modi similique vitae!",
+    "imgUrl": "/assets/img/blog/ben-kolde-430909-unsplash.jpg"
+  }
+]

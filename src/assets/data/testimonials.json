@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "author": "Lori Steward",
+    "authorPosition": "CEO/Founder",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores commodi delectus, dolores ex excepturi molestias nemo neque!",
+    "imgUrl": "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    "id": 2,
+    "author": "Brittany Crawford",
+    "authorPosition": "CEO/Founder",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores commodi delectus, dolores ex excepturi molestias nemo neque nihil officiis perferendis temporibus voluptatem.",
+    "imgUrl": "https://randomuser.me/api/portraits/women/57.jpg"
+  },
+  {
+    "id": 3,
+    "author": "Johnni Tucker",
+    "authorPosition": "CEO/Founder",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores commodi delectus, dolores ex excepturi molestias nemo neque nihil officiis perferendis temporibus voluptatem.",
+    "imgUrl": "https://randomuser.me/api/portraits/men/88.jpg"
+  }
+]
