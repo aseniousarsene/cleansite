@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { GetDataService } from '../../services/get-data.service';
-import { TestimonialModel } from '../../models/testimonial.model';
+import { GetDataService } from '../../../services/get-data.service';
+import { TestimonialModel } from '../../../models/testimonial.model';
 import { Subscription } from 'rxjs';
 
 @Component({

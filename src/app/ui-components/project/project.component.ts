@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { ProjectModel } from '../models/project.model';
-import { GetDataService } from '../services/get-data.service';
+import { ProjectModel } from '../../models/project.model';
+import { GetDataService } from '../../services/get-data.service';
 
 @Component({
   selector: 'app-projects',

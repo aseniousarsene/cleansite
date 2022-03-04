@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { GetDataService } from '../../services/get-data.service';
-import { BlogModel } from '../../models/blog.model';
+import { GetDataService } from '../../../services/get-data.service';
+import { BlogModel } from '../../../models/blog.model';
 import { Subscription } from 'rxjs';
 
 @Component({

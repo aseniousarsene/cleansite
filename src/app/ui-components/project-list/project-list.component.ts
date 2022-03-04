@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ProjectModel } from '../models/project.model';
-import { GetDataService } from '../services/get-data.service';
+import { ProjectModel } from '../../models/project.model';
+import { GetDataService } from '../../services/get-data.service';
 import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 

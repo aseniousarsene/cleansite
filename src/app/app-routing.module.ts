@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {ProjectListComponent} from './project-list/project-list.component';
-import {ProjectComponent} from './project/project.component';
-import {TeamComponent} from './team/team.component';
-import {BlogComponent} from './blog/blog.component';
-import {ContactComponent} from './contact/contact.component';
-import {BlogPostComponent} from './blog-post/blog-post.component';
+import {HomeComponent} from './ui-components/home/home.component';
+import {ProjectListComponent} from './ui-components//project-list/project-list.component';
+import {ProjectComponent} from './ui-components//project/project.component';
+import {TeamComponent} from './ui-components//team/team.component';
+import {BlogComponent} from './ui-components//blog/blog.component';
+import {ContactComponent} from './ui-components//contact/contact.component';
+import {BlogPostComponent} from './ui-components//blog-post/blog-post.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
