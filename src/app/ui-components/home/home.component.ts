@@ -30,10 +30,11 @@ export class HomeComponent implements OnInit {
     public arrows: IconDefinition[] = [];
 
     constructor(private title: Title, private meta: Meta) {
-        title.setTitle('pcs-web - Portfolio App');
-        meta.addTags([
-            { name: 'description', content: 'pcs-web - Portfolio application for agencies or freelancers' }
-        ]);
+        title.setTitle('PCS');
+        meta.addTags([{
+          name: 'description',
+          content: 'Pashi Consulting website'
+        }]);
         this.arrows.push(faLongArrowAltLeft, faLongArrowAltRight);
     }
 

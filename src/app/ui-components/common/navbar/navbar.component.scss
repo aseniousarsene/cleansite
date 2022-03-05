@@ -5,6 +5,7 @@
 .navbar {
   transition: padding .3s;
   /*, background-color .3s*/
+  background-color: lightgray !important;
 
   &.short {
     padding-top: 1rem;

@@ -10,11 +10,11 @@ $container-max-widths: (sm: 540px, md: 720px, lg: 980px, xl: 1300px);
 
 $gutter: $grid-gutter-width;
 
-$home-bg: #790bb5; //#5f088e
+$home-bg: #fff; //#5f088e
 $body-padding-top: 4rem;
 
 $primary: $home-bg;
-$warning: #fbd102;
+$warning: #f75363; //#fbd102;
 $danger: #f75363;
 $black: $gray-900;
 $text-muted: rgba($body-color, .4);
